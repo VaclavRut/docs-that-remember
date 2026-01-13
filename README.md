@@ -21,6 +21,40 @@ Most development teams have one of two problems:
 
 It's the **MEMORY** that most teams miss.
 
+## Structure
+
+```
+/docs
+├── 00-context/              # WHY & WHAT EXISTS NOW
+│   ├── vision.md            # Product purpose & principles
+│   ├── assumptions.md       # Risks & unknowns
+│   └── system-map.md        # Current system state
+│
+├── 01-product/              # WHAT TO BUILD
+│   └── prd.md               # Product requirements
+│
+├── 02-features/             # HOW TO BUILD IT
+│   └── feature-<name>/
+│       ├── feature-spec.md  # User intent & acceptance
+│       ├── tech-design.md   # Architecture & approach
+│       ├── dev-tasks.md     # Implementation tasks
+│       └── test-plan.md     # Testing strategy
+│
+├── 03-logs/                 # MEMORY (the magic)
+│   ├── implementation-log.md # Code changes & why
+│   ├── decision-log.md       # Key decisions
+│   ├── bug-log.md            # Bugs & fixes
+│   ├── validation-log.md     # Post-ship reality
+│   └── insights.md           # Learnings
+│
+└── 04-process/              # HOW TO WORK
+    ├── dev-workflow.md       # Daily workflow
+    ├── definition-of-done.md # Quality standards
+    └── llm-prompts.md        # Prompts for AI
+```
+
+See **[docs/README.md](docs/README.md)** for complete documentation.
+
 ## What Makes This Different
 
 ### 1. Logs Over Perfect Docs
@@ -76,40 +110,6 @@ After shipping, update:
 - `docs/03-logs/implementation-log.md` - What you built
 - `docs/03-logs/validation-log.md` - What actually happened
 - `docs/03-logs/insights.md` - What you learned
-
-## Structure
-
-```
-/docs
-├── 00-context/              # WHY & WHAT EXISTS NOW
-│   ├── vision.md            # Product purpose & principles
-│   ├── assumptions.md       # Risks & unknowns
-│   └── system-map.md        # Current system state
-│
-├── 01-product/              # WHAT TO BUILD
-│   └── prd.md               # Product requirements
-│
-├── 02-features/             # HOW TO BUILD IT
-│   └── feature-<name>/
-│       ├── feature-spec.md  # User intent & acceptance
-│       ├── tech-design.md   # Architecture & approach
-│       ├── dev-tasks.md     # Implementation tasks
-│       └── test-plan.md     # Testing strategy
-│
-├── 03-logs/                 # MEMORY (the magic)
-│   ├── implementation-log.md # Code changes & why
-│   ├── decision-log.md       # Key decisions
-│   ├── bug-log.md            # Bugs & fixes
-│   ├── validation-log.md     # Post-ship reality
-│   └── insights.md           # Learnings
-│
-└── 04-process/              # HOW TO WORK
-    ├── dev-workflow.md       # Daily workflow
-    ├── definition-of-done.md # Quality standards
-    └── llm-prompts.md        # Prompts for AI
-```
-
-See **[docs/README.md](docs/README.md)** for complete documentation.
 
 ## Philosophy
 
